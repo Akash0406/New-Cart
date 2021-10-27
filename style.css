@@ -1,0 +1,135 @@
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+} 
+
+/* Adding Gradient to Body */
+ body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgb(17, 58, 151) 27%, rgb(89, 0, 255) 100%);
+
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}  
+
+.mainFrame {
+    position: relative; 
+    top: 100px;
+    left: 30%;
+    height: auto;
+    width: 550px;
+    display: inline-flex;
+
+    color: rgba(130, 130, 130, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+
+
+    /* border: 2px solid red; */
+}
+
+.mainFrame2 {
+    position: relative; 
+    top: 400px;
+    right: 100px;
+    height: auto;
+    width: 550px;
+    display: inline-flex;
+
+    color: rgba(130, 130, 130, 0.5);
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+
+
+    /* border: 2px solid red; */
+}
+
+.mainFrame::before {
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.3);
+        filter: blur(100px);
+}
+
+
+.heading1, .heading2 {
+    
+    position: absolute;
+}
+
+hr{
+    position: relative;
+    left: 80%;
+    width: 500%;
+    /* visibility: hidden; */
+    border: 2px solid black;
+    
+}
+
+.heading1 {
+    top: 8%;
+}
+.heading2 {
+    top: 47%;
+}
+
+.head {
+    position: relative;
+    left: 150%;
+}
+
+.cart-container {
+    /* border: 2px solid red; */
+    height: 200px;
+    width: 250px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+li {
+    margin: 10px;
+    list-style: none;
+}
+
+.btn-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add {
+    width: 80%;
+    margin: 20px 20px 10px 20px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(148,235,80,1) 0%, rgba(72,202,67,1) 12%, rgba(13,159,120,1) 94%, rgba(177,194,28,1) 99%);
+}
+
+.add:active {
+    background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(148,235,80,1) 0%, rgba(72,202,67,1) 2%, rgba(13,159,120,1) 18%, rgba(57,194,28,1) 94%);
+}
+
+.remove {
+    width: 80%;
+    margin: 10px 20px 10px 20px;
+    height: 40px;
+    background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(129,80,235,1) 0%, rgba(202,87,67,1) 14%, rgba(159,13,71,1) 84%, rgba(0,212,255,1) 99%);
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.remove:active {
+    background: rgb(2,0,36);
+background: linear-gradient(135deg, rgba(2,0,36,1) 0%, rgba(235,80,151,1) 0%, rgba(202,67,97,1) 12%, rgba(159,13,71,1) 83%, rgba(194,28,59,1) 99%);
+}
